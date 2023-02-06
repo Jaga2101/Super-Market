@@ -1,0 +1,37 @@
+@Import Url('Https://Fonts.Googleapis.Com/Css?Family=Raleway:200');
+Body, Html {
+Height: 100%;
+Margin: 0;
+Font-Family: 'Raleway', Sans-Serif;
+Font-Weight: 200;
+}
+Body {
+Background-Color: #0f0f1a;
+Display: Flex;
+Align-Items: Center;
+Justify-Content: Center;
+Flex-Direction: Column;
+}
+.Digit-Group Input {
+Width: 30px;
+Height: 50px;
+Background-Color: #18182a;
+Border: None;
+Line-Height: 50px;
+Text-Align: Center;
+Font-Size: 24px;
+Font-Family: 'Raleway', Sans-Serif;
+Font-Weight: 200;
+Color: White;
+Margin: 0 2px;
+}
+.Digit-Group .Splitter {
+Padding: 0 5px;
+Color: White;
+Font-Size: 24px;
+}
+.Prompt {
+Margin-Bottom: 20px;
+Font-Size: 20px;
+Color: White;
+}

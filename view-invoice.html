@@ -1,0 +1,116 @@
+<html>
+<!-- Header File Access-->
+<head>
+    <title>Kanna Super Market</title>
+   <!--Category CSS File Access-->
+<link rel="stylesheet" href="invoice.css">
+</head>
+<body>
+    <header>Kanna Super Market</header>
+    <div class="nav-bar">
+        <ul><br><br>
+            <li><a href="Dashboard.html"> Dashboard</a></li><br>
+            <li><a href="manage-categories.html">Categorys</a></li><br>
+            <li><a href="manage-companies.html">Companys</a></li><br>
+            <li><a href="manage-products.html">products</a></li><br>
+            <li> <a href="search-product.html">Billing </a></li><br>
+            <li><a href="bwdate-report-ds.html">Reports</a></li><br>
+            <li><a href="index.html">Logout</a></li><br><br><br>
+        </ul>
+    </div>
+
+<script>
+function printDiv(){
+  var divContents =document.getElementById("container").innerHTML;
+  var a = window.open('','','height=600,width=800');
+  a.document.write('<html>');
+  a.document.write('<body> ');
+  a.document.write(divContents);
+  a.document.write('</body></html>');
+  a.document.close();
+  a.print();
+
+}
+</script>
+</head>
+<body>
+<!-- -->
+<div class="content" id="container">
+<div class="container" >
+<div class="brand-section">
+<div class="row">
+<div class="col-6">
+  <h2 class="text-white">Kanna Super Market</h2>
+  
+</div>
+<div class="col-6">
+<div class="company-details">
+  <p class="text-white">Paramathi Rd,Thillaipuram</p>
+  <p class="text-white">Namakkal - 637001</p>
+</div>
+</div>
+</div>
+</div>
+<div class="body-section">
+<div class="row">
+<div class="col-6">
+  <h4 class="heading">Invoice No :<?php echo $row['InvoiceNumber'];?> </h4>
+  <p class="heading">Date :<?php echo $row['InvoiceGenDate'];?></p>
+</div>
+<div class="col-6">    
+<p class="sub-heading">Customer Name :&nbsp;<?php echo $row['CustomerName'];?></p>
+<p class="sub-heading">&nbsp;&nbsp;&nbsp;Mobile No &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;<?php echo $row['CustomerContactNo'];?></p>
+<p class="sub-heading">&nbsp;&nbsp;Payment Mode :&nbsp;<?php echo $row['PaymentMode'];?></p>
+</div>
+</div>
+</div>
+
+<div class="body-section">
+<h3 class="heading">Order Item </h3>
+<br>
+<table class="table-border">
+<thead>
+<tr>
+<th>ID</th>
+<th >Product Name</th>
+<th>Category</th>
+<th>Company</th>
+<th width="5%">Quantity</th>
+<th width="10%">Unit Price</th>
+<th width="10%">Price</th>
+</tr>
+</thead>
+<tbody>                  
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+
+  <tr>
+<th colspan="6" style="text-align:center; font-size:20px;">Total</th> 
+<th style="text-align:left; font-size:20px;"></th>   
+</tr>
+</tbody>  
+</table>                    
+<br>
+</div>
+</div>
+</div>
+<center>
+  <button  onclick="printDiv()">Print</button>
+</center>
+<br><br>
+<!-- -->
+</body>
+</html>
+
+
+
+

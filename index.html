@@ -1,0 +1,29 @@
+<?php
+session_start();
+?>
+
+
+<html>
+    <head>
+        <title>Super Market</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <br>
+        <center>
+        <header>Kanna Super Market</header><br><br>
+        <form action="dashboard.html" method="Post">
+            <h2>Admin Login</h2>
+            <span>
+            <label for="name">Admin ID</label>
+            <input type="text" placeholder="Admin ID" name="UserName" required>
+            </span>
+            <span>
+            <label for="password">Password</label>&nbsp;&nbsp;
+            <input type="password" placeholder="Password" name="Password" required>
+            </span>
+            <center><button type="submit" name="save_login"  >Login</button></center>
+        </form>
+        </center>
+    </body>
+</html>

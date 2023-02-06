@@ -1,0 +1,37 @@
+<html>
+<!-- Header File Access-->
+<head>
+    <title>Kanna Super Market</title>
+   <!--Category CSS File Access-->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Kanna Super Market</header>
+    <div class="nav-bar">
+        <ul><br><br>
+            <li><a href="Dashboard.html"> Dashboard</a></li><br>
+            <li><a href="manage-categories.html">Categorys</a></li><br>
+            <li><a href="manage-companies.html">Companys</a></li><br>
+            <li><a href="manage-products.html">products</a></li><br>
+            <li> <a href="search-product.html">Billing </a></li><br>
+            <li><a href="bwdate-report-ds.html">Reports</a></li><br>
+            <li><a href="index.html">Logout</a></li><br><br><br>
+        </ul>
+    </div>
+<!--Company Start-->
+<div class="content">
+        <div class="pro">
+            <h2>Company<button><a href="manage-companies.html">Back</a></button></h2>
+        </div>
+        <form action="manage-companies.html" method="POST">
+            <h3>Add Company</h3>
+            <label for="validationCustom03">Company Name</label>
+            <input type="text" placeholder="Company Name" name="companyname" required><br><br>
+            <center><button  type="submit" name="save_company" >Create Company</button></center>
+        </form>
+</div>
+<!--Company End-->
+</body>
+</html>
+    
+

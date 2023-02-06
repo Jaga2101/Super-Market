@@ -1,0 +1,49 @@
+<html>
+<!-- Header File Access-->
+<head>
+    <title>Kanna Super Market</title>
+   <!--Product CSS File Access-->
+<link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <header>Kanna Super Market</header>
+    <div class="nav-bar">
+        <ul><br><br>
+            <li><a href="Dashboard.html"> Dashboard</a></li><br>
+            <li><a href="manage-categories.html">Categorys</a></li><br>
+            <li><a href="manage-companies.html">Companys</a></li><br>
+            <li><a href="manage-products.html">products</a></li><br>
+            <li> <a href="search-product.html">Billing </a></li><br>
+            <li><a href="bwdate-report-ds.html">Reports</a></li><br>
+            <li><a href="index.html">Logout</a></li><br><br><br>
+        </ul>
+    </div>
+ <!--Product Code Start-->
+ <div class="content">
+
+        <div class="pro">
+           <h2>Product<button><a href="manage-products.html">Back</a></button></h2>
+        </div>
+        <form method="POST" action="manage-products.html">
+            <h3>Add Products</h3>
+            <label for="validationCustom03">&nbsp;Product Category&nbsp;</label>
+            <select name="category" required>
+            <option value="">Select category</option>
+    
+    </select><br>
+            <label for="validationCustom03">&nbsp;Product Company&nbsp;</label>
+            <select  name="company" required>
+            <option value="">Select Company</option>
+    </select><br>
+            <label for="validationCustom03">&nbsp;Product Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text"  placeholder="Product Name" name="productname" required><br>
+            <label for="validationCustom03">&nbsp;Product Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="number" placeholder="Product Price" name="productprice" required><br><br>
+            <center>
+                <button  type="submit" name="save_product">Add Product</button>
+            </center>
+    </form>
+</div>
+<!--Product Code End-->
+</body>
+</html>

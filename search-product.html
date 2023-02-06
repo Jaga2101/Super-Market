@@ -1,0 +1,145 @@
+<html>
+<!-- Header File Access-->
+<head>
+    <title>Kanna Super Market</title>
+   <!--Category CSS File Access-->
+<link rel="stylesheet" href="bill.css">
+</head>
+<body>
+    <header>Kanna Super Market</header>
+    <div class="nav-bar">
+        <ul><br><br>
+            <li><a href="Dashboard.html"> Dashboard</a></li><br>
+            <li><a href="manage-categories.html">Categorys</a></li><br>
+            <li><a href="manage-companies.html">Companys</a></li><br>
+            <li><a href="manage-products.html">products</a></li><br>
+            <li> <a href="search-product.html">Billing </a></li><br>
+            <li><a href="bwdate-report-ds.html">Reports</a></li><br>
+            <li><a href="index.html">Logout</a></li><br><br><br>
+        </ul>
+    </div>
+
+<div class="content">
+<div class="pro">
+                <h2>Search Product<button class="btn"><a href="add-category.php">View-Bill</a></button></h2>
+</div><br><br>
+<form class="bill" method="post" novalidate>
+                                       
+<label for="validationCustom03">Product Name</label>
+<input type="text"  id="validationCustom03" placeholder="Product Name" name="productname" required>
+<button class="btn1" type="submit" name="search">search</button>
+</form>
+
+
+                            
+                                        <table id="myTable">
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Category</th>
+                                                    <th>Company</th>
+                                                    <th>Product</th>
+                                                    <th>Pricing</th>
+                                                    <th>Quantity</th>
+                                                    <th>Action</th>
+                                                    
+                                                </tr>
+                                        
+
+<form method="post" action="search-product.html">                                                  
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><input type="text"  name="quantity" value="1" size="2" /></td>
+<td>
+<input type="submit" value="Add to Cart" class="btnAddAction" />
+</td>
+</tr>
+</form>
+                                          
+                        
+                                        </table>
+                                   
+
+<form   method="post" novalidate>
+
+<!--- Shopping Cart ---->
+
+                            
+<h4>Shopping Cart</h4>
+<hr />
+
+<a id="btnEmpty" href="search-product.html" >Empty Cart</a>
+
+  <table id="myTable">
+
+<tr>
+<th >Product Name</th>
+<th>Category</th>
+<th>Company</th>
+<th width="5%">Quantity</th>
+<th width="10%">Unit Price</th>
+<th width="10%">Price</th>
+<th width="5%">Remove</th>
+</tr>   
+
+          
+
+<tr>
+<td colspan="3" text-align="right">Total:</td>
+<td colspan="2"><?php echo $total_quantity; ?></td>
+<td colspan=><strong><?php echo number_format($total_price, 2); ?></strong></td>
+<td></td>
+</tr>
+</table>  
+
+<div class="box">
+<label for="validationCustom03">&nbsp;&nbsp;Customer Name</label>
+<input type="text" placeholder="Customer Name" name="customername" required>
+
+
+<label for="validationCustom03"> Mobile Number</label>
+<input type="text"  placeholder="Mobile Number" name="mobileno" required>
+
+
+<label for="validationCustom03">&nbsp;&nbsp;&nbsp;Payment Mode</label>
+<input type="radio" class="rain" name="paymentmode" value="cash" required>
+<label  for="customControlValidation2">Cash</label>
+
+<input type="radio" class="rain" name="paymentmode" value="card" required>
+<label  for="customControlValidation3">Card</label>
+
+<center>
+<button class="btn1" type="submit" name="checkout">Checkout</button>
+    </center>
+    </div>
+</form>
+
+  
+<div style="color:red" text-align="center">Your Cart is Empty</div>
+
+</div>
+
+        </div>
+        <!-- /Main Content -->
+
+    </div>
+
+
+    <style type="text/css">
+        #btnEmpty {
+    background-color: #ffffff;
+    border: #d00000 1px solid;
+    padding: 5px 10px;
+    color: #d00000;
+    float: right;
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 10px 0px;
+}
+
+    </style>
+</body>
+</html>
